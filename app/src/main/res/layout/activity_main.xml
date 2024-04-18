@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg1"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/txtname"
+        android:layout_width="313dp"
+        android:layout_height="120dp"
+        android:layout_marginStart="45dp"
+        android:layout_marginTop="158dp"
+        android:layout_marginEnd="45dp"
+        android:layout_marginBottom="345dp"
+        android:fontFamily="serif-monospace"
+        android:text="Triple A"
+        android:textAlignment="center"
+        android:textColor="#2F47CA"
+        android:textSize="60sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/butStart"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/txtintro"
+        android:layout_width="307dp"
+        android:layout_height="366dp"
+        android:layout_marginStart="49dp"
+        android:layout_marginEnd="49dp"
+        android:layout_marginBottom="199dp"
+        android:fontFamily="casual"
+        android:text="Learn mathematical operations for elementary school from scratch"
+        android:textAlignment="center"
+        android:textColor="#E91E63"
+        android:textSize="35sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView3" />
+
+    <Button
+        android:id="@+id/butStart"
+        android:layout_width="234dp"
+        android:layout_height="71dp"
+        android:layout_marginBottom="64dp"
+        android:backgroundTint="#2F47CA"
+        android:text="Click To Start"
+        android:textColor="#F8ECF5"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtname" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="247dp"
+        android:text="#E91E63"
+        android:textColor="#E91E63"
+        app:layout_constraintBottom_toTopOf="@+id/txtintro"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="247dp"
+        android:text="#E91E63"
+        android:textColor="#E91E63"
+        app:layout_constraintBottom_toTopOf="@+id/txtintro"
+        app:layout_constraintStart_toStartOf="@+id/textView4"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

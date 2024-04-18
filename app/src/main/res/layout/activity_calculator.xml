@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/pic2"
+    tools:context=".Calculator">
+
+    <EditText
+        android:id="@+id/number1EditText"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="68dp"
+        android:layout_marginTop="157dp"
+        android:layout_marginEnd="68dp"
+        android:layout_marginBottom="43dp"
+        android:hint="Enter number 1"
+        android:inputType="numberDecimal"
+        android:textColor="#ECCA64"
+        app:layout_constraintBottom_toTopOf="@+id/operationSpinner"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/number2EditText"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="75dp"
+        android:layout_marginEnd="75dp"
+        android:layout_marginBottom="80dp"
+        android:hint="Enter number 2"
+        android:inputType="numberDecimal"
+        android:textColor="#ECCA64"
+        app:layout_constraintBottom_toTopOf="@+id/calculateButton"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/operationSpinner" />
+
+    <Spinner
+        android:id="@+id/operationSpinner"
+        android:layout_width="126dp"
+        android:layout_height="36dp"
+        android:layout_marginBottom="47dp"
+        android:backgroundTint="#D591A8"
+        app:layout_constraintBottom_toTopOf="@+id/number2EditText"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/number1EditText" />
+
+    <TextView
+        android:id="@+id/resultTextView"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="63dp"
+        android:layout_marginEnd="63dp"
+        android:layout_marginBottom="234dp"
+        android:text="Result: "
+        android:textColor="#131313"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/calculateButton" />
+
+    <Button
+        android:id="@+id/calculateButton"
+        android:layout_width="132dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="60dp"
+        android:backgroundTint="#D591A8"
+        android:text="Calculate"
+        app:layout_constraintBottom_toTopOf="@+id/resultTextView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/number2EditText" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

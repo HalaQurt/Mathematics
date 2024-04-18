@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/pic4"
+    tools:context=".Hard">
+
+    <TextView
+        android:id="@+id/txtHard"
+        android:layout_width="220dp"
+        android:layout_height="54dp"
+        android:layout_marginTop="18dp"
+        android:layout_marginBottom="29dp"
+        android:text="Hard Quiz"
+        android:textAlignment="center"
+        android:textSize="28sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/txtHardQ1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <RadioGroup
+        android:id="@+id/FirstGroupH"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="12dp"
+        android:layout_marginEnd="12dp"
+        android:layout_marginBottom="21dp"
+        app:layout_constraintBottom_toTopOf="@+id/txtHardQ2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtHardQ1">
+
+        <RadioButton
+            android:id="@+id/btnHard1"
+            android:layout_width="match_parent"
+            android:layout_height="76dp"
+            android:text="6" />
+
+        <RadioButton
+            android:id="@+id/btnHard2"
+            android:layout_width="match_parent"
+            android:layout_height="71dp"
+            android:text="22" />
+
+        <RadioButton
+            android:id="@+id/btnHard3"
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:text="11" />
+    </RadioGroup>
+
+    <TextView
+        android:id="@+id/txtHardQ1"
+        android:layout_width="377dp"
+        android:layout_height="49dp"
+        android:layout_marginStart="14dp"
+        android:layout_marginEnd="28dp"
+        android:text="Q1 : 3 * 8 - 2 ="
+        android:textSize="28sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/FirstGroupH"
+        app:layout_constraintEnd_toEndOf="@+id/FirstGroupH"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtHard" />
+
+    <TextView
+        android:id="@+id/txtHardQ2"
+        android:layout_width="376dp"
+        android:layout_height="60dp"
+        android:layout_marginStart="12dp"
+        android:layout_marginEnd="12dp"
+        android:text="Q2 : 4 * 5  + 3 * 9=  "
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/SecondGroupH"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/FirstGroupH" />
+
+    <RadioGroup
+        android:id="@+id/SecondGroupH"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="12dp"
+        android:layout_marginEnd="12dp"
+        android:layout_marginBottom="194dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtHardQ2">
+
+        <RadioButton
+            android:id="@+id/btnHard4"
+            android:layout_width="match_parent"
+            android:layout_height="71dp"
+            android:text="63" />
+
+        <RadioButton
+            android:id="@+id/btnHard5"
+            android:layout_width="match_parent"
+            android:layout_height="86dp"
+            android:text="25" />
+
+        <RadioButton
+            android:id="@+id/btnHard6"
+            android:layout_width="match_parent"
+            android:layout_height="65dp"
+            android:text="47" />
+    </RadioGroup>
+</androidx.constraintlayout.widget.ConstraintLayout>
